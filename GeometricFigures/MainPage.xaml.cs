@@ -12,7 +12,6 @@ namespace GeometricFigures
         {
             this.InitializeComponent();
             Frame frame = Window.Current.Content as Frame;
-
             frame.CacheSize = 5;
         }
 
@@ -32,11 +31,6 @@ namespace GeometricFigures
             {
                 Frame.Navigate(typeof(CreateRegularHexagon));
             }
-        }
-
-        protected override void OnNavigatedTo(NavigationEventArgs e)
-        {
-            var t = e.SourcePageType;
         }
     }
 }
