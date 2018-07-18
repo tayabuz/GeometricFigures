@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="GeometricFigures.CreateRegularHexagon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeometricFigures"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetUpFirstXValue" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                <TextBlock Text="Введите X первой точки шестиугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetUpFirstXValue" RelativePanel.AlignVerticalCenterWith="SetUpFirstXValue"/>
+            </RelativePanel>
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetUpFirstYValue" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" />
+                <TextBlock Text="Введите Y первой точки шестиугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetUpFirstYValue" RelativePanel.AlignVerticalCenterWith="SetUpFirstYValue"/>
+            </RelativePanel>
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetHexagonSide" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                <TextBlock Text="Введите длину стороны шестиугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetHexagonSide" RelativePanel.AlignVerticalCenterWith="SetHexagonSide"/>
+            </RelativePanel>
+            <Button x:Name="DrawRegularHexagon" Content="Нарисовать шестиугольник" HorizontalAlignment="Center" Click="DrawRegularHexagon_OnClick_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,40 @@
+﻿<Page
+    x:Class="GeometricFigures.CreateTriangle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GeometricFigures"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetUpFirstXValue" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                <TextBlock Text="Введите X первой точки треугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetUpFirstXValue" RelativePanel.AlignVerticalCenterWith="SetUpFirstXValue"/>
+            </RelativePanel>
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetUpFirstYValue" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" />
+                <TextBlock Text="Введите Y первой точки треугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetUpFirstYValue" RelativePanel.AlignVerticalCenterWith="SetUpFirstYValue"/>
+            </RelativePanel>
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetUpSecondXValue" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                <TextBlock Text="Введите X второй точки треугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetUpSecondXValue" RelativePanel.AlignVerticalCenterWith="SetUpSecondXValue"/>
+            </RelativePanel>
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetUpSecondYValue" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True" />
+                <TextBlock Text="Введите Y второй точки треугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetUpSecondYValue" RelativePanel.AlignVerticalCenterWith="SetUpSecondYValue"/>
+            </RelativePanel>
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetUpThirdXValue" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                <TextBlock Text="Введите X третьей точки треугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetUpThirdXValue" RelativePanel.AlignVerticalCenterWith="SetUpThirdXValue"/>
+            </RelativePanel>
+            <RelativePanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <TextBox x:Name="SetUpThirdYValue" Margin="10" RelativePanel.AlignTopWithPanel="True" RelativePanel.AlignRightWithPanel="True"/>
+                <TextBlock Text="Введите Y третьей точки треугольника" IsTextSelectionEnabled="True" RelativePanel.LeftOf="SetUpThirdYValue" RelativePanel.AlignVerticalCenterWith="SetUpThirdYValue"/>
+            </RelativePanel>
+            <Button x:Name="DrawTriangle" Content="Нарисовать треугольник" HorizontalAlignment="Center" Click="DrawTriangle_OnClick_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
