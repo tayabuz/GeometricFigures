@@ -38,10 +38,5 @@ namespace GeometricFigures
             }
             figure.Draw(DrawFigureCanvas);
         }
-
-        protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
-        {
-            var t = e.SourcePageType;
-        }
     }
 }
