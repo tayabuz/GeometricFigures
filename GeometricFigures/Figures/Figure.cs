@@ -29,11 +29,11 @@ namespace GeometricFigures.Figures
         {
             for (int i = 0; i < points.Length; i++)
             {
-				if(points[i] != null)
+		if(points[i] != null)
                 {
-					points[i].X = points[i].X + deltaX;
-					points[i].Y = points[i].Y + deltaY;
-				}
+			points[i].X = points[i].X + deltaX;
+			points[i].Y = points[i].Y + deltaY;
+		}
             }
         }
 
